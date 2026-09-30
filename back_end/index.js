@@ -4,7 +4,7 @@ let app = express();
 app.use(express.json());
 mongoose.connect("mongodb://127.0.0.1:27017/Secure_file_storage")
     .then(() => {
-        console.log("MongoDB connected");
+        console.log("MongoDB database is connected");
     })
     .catch((error) => {
         console.log("MongoDB connection error:", error);
